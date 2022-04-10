@@ -1,0 +1,210 @@
+@font-face {
+    font-family: Digital7;
+    src: url(assets/fonts/digital-7/digital-7.ttf);
+}
+@font-face {
+    font-family: Digital7-Italic;
+    src: url(assets/fonts/digital-7/digital-7\ \(italic\).ttf);
+}
+@font-face {
+    font-family: PlayfairDisplayBlack;
+    src: url(assets/fonts/Playfair-Display/PlayfairDisplay-Black.ttf);
+}
+@font-face {
+    font-family: SourceSansProRegular;
+    src: url(assets/fonts/Source-Sans-Pro/SourceSansPro-Regular.ttf);
+}
+@font-face {
+    font-family: SourceSansProBlack;
+    src: url(assets/fonts/Source-Sans-Pro/SourceSansPro-Black.ttf);
+}
+/*Decalring variables to minimize color and code repetition*/
+:root{
+    --tcssDarkBlue:#0f172a;
+    --tcssBlue:#0ea5e9;
+    --tcssPink:#be185d;
+
+    --CalcFont:Digital7;
+    --CalcFontItalic:Digital7-Italic;
+
+    --PfDBlack:PlayfairDisplayBlack;
+    --SSPR:SourceSansProRegular;
+    --SSPB:SourceSansProBlack;
+}
+
+*{
+    box-sizing: border-box;  /*Made box-sizing property to border-box to include borders in the width and height calculation*/
+    margin: 0px;
+    padding:0px;
+    outline: none;
+    color: #210052;
+    user-select: none;
+}
+
+body{
+
+    background-color: #e8e8e8;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+.spacecolumn,.CalcBody{
+    display:inline-block;
+}
+
+.spacecolumn{
+    width: 40%;
+}
+
+
+.CalcBody{
+    margin-top: -20px;
+    width: 20%;
+    overflow:hidden;
+    height: 100%;
+
+        border-radius: 32px;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    transition: all .3s;
+    box-shadow: 6px 6px 12px #c5c5c5,
+                -6px -6px 12px #ffffff;
+
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+}
+
+.CalcBody::selection{
+    user-select: none;
+}
+
+.CalcDisplay{
+    width: 100%;
+    margin-top: 20px;
+    resize:none;
+    height: 100px;
+    font-size:70px;
+    outline: none;
+    overflow: hidden;
+
+    border-radius: 32px;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    transition: all .3s;
+    box-shadow: 6px 6px 12px #c5c5c5,
+                -6px -6px 12px #ffffff;
+
+    margin-bottom: 2%;   
+    user-select: text;         
+}
+
+.CalcDisplay:focus{
+    box-shadow: inset 4px 4px 12px #c5c5c5,
+             inset -4px -4px 12px #ffffff;
+}
+
+.CalcButtonRow{
+    padding-left: 1%;
+    width: 100%;
+    padding-bottom: 4%;
+}
+
+.CalcButtonDiv{
+    display: inline-block;
+    margin-left: 2%;
+    width: 30%;
+    height: 100px;
+}
+
+.CalcButton{
+    width:100%;
+    height: 100%;
+    font-size: 60px;
+
+    border-radius: 32px;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    transition: all .3s;
+    box-shadow: 6px 6px 12px #c5c5c5,
+                -6px -6px 12px #ffffff;
+}
+
+.CalcButton:active{
+    box-shadow: inset 4px 4px 12px #c5c5c5,
+             inset -4px -4px 12px #ffffff;
+    
+}
+
+.CalcEqualButton{
+    background-color: #ff3b3f;
+}
+.CalcEqualButton:active{
+    box-shadow: inset 4px 4px 12px #d93236,
+             inset -4px -4px 12px #ff4448;
+}
+.CalcOpsButton{
+    background-color: #caebf2;
+}
+
+.CalcOpsButton:active{
+    box-shadow: inset 4px 4px 12px #acc8ce,
+             inset -4px -4px 12px #e8ffff;
+}
+
+
+.widerh1{
+    visibility: hidden;
+}
+
+
+
+@media screen and (min-width: 0px) and (max-width: 223px){
+    *{
+        visibility: hidden;
+    }
+    .widerh1{
+        visibility:visible;
+
+    }
+}
+
+@media screen and (min-width: 224px) and (max-width: 576px){
+    .spacecolumn{
+       width: 1%;
+    }
+    .CalcBody{
+        width: 98%;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 576px){
+    .spacecolumn{
+        width: 3%;
+    }
+    .CalcBody{
+        width: 94%;
+    }
+}
+
+
+@media screen and (min-width: 577px) and (max-width: 767px){
+    .spacecolumn{
+        width: 20%;
+    }
+    .CalcBody{
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .spacecolumn{
+        width: 33.3%;
+    }
+    .CalcBody{
+        width: 33.3%;
+    }    
+}
