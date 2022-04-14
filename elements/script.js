@@ -13,6 +13,8 @@ document.getElementById("bodyDiv").style.backgroundColor = "rgb("+randBgColor +"
 
 //document.getElementById("bodyDiv").addEventListener("click", myFunction);
 
+
+
 //function myFunction() {
   //var randomElements = Math.floor(Math.random()*3);
   //for(i=0;i<3;i++){
