@@ -6,6 +6,9 @@
 }
 
 .elements{
-    min-height: 400px;
-    min-width: 400px;
+    min-height: 100px;
+    min-width: 100px;
+    border-radius: 100%;
+    background-color: blue;
+    position: absolute;
 }
