@@ -6,18 +6,20 @@ function mouseTrack(event){
   console.log("moven");
   document.getElementById("my").style.top =event.clientY +"px";
   document.getElementById("my").style.left =event.clientX + "px";
-  clXCent = event.clientX / window.innerWidth *100;
-  clYCent = event.clientY / window.innerHeight *100;
-  console.log(clXCent,clYCent);
-  this.getPosPercent = function(){
-    return(clXCent+"% "+clYCent+"%")
-  }
+  
+  document.getElementById("others").style.top =event.clientY +"px";
+  document.getElementById("others").style.left =event.clientX + "px";
+  // console.log(clXCent,clYCent);
 
 }
 
 window.addEventListener("click", createElements);
  var counter = 0;
-function createElements(){
+function createElements(event){
+  document.getElementById("my").style.top =event.clientY +"px";
+  document.getElementById("my").style.left =event.clientX + "px";
+  document.getElementById("others").style.top =event.clientY +"px";
+  document.getElementById("others").style.left =event.clientX + "px";
   if(counter<10){
     var clickRandBg = "hsla("+0 +", "+0+"%, "+Math.floor(Math.random() * (80) + 79)+ "%,1)";
   document.body.style.backgroundColor = clickRandBg;
@@ -38,23 +40,23 @@ function createElements(){
     this.newElement.style.minWidth =randomSeed /3+ "px";
   
     this.newElement.style.backgroundColor = "hsla("+ Math.floor(Math.random() * 48) +","+ 100 +"%,"+50  +"%,"+ (Math.random() * 0.90 + 0.60) +")";
-    console.log("Element Properties: color:" + this.newElement.style.backgroundColor) 
-    this.newElement.style.top = Math.floor(Math.random() * (window.innerHeight - randomSeed)) + "px";
-    this.newElement.style.left = Math.floor(Math.random() * (window.innerHeight)) + "px";
+    // console.log("Element Properties: color:" + this.newElement.style.backgroundColor) 
+    this.newElement.style.top = Math.floor(Math.random() * (window.innerHeight-100) + (-1*((window.innerHeight-100)))) + "px";
+    this.newElement.style.left = Math.floor(Math.random() * (window.innerWidth-100) + (-1*((window.innerWidth-100)))) + "px";
     
-    function getPos(event){
-      clXCent = event.clientX / window.innerWidth *100;
-      clYCent = event.clientY / window.innerHeight *100;
-      return clXCent+"% "+clYCent+"%"
-    }
-      this.newElement.style.transformOrigin =window.addEventListener("mousemove",getPos);
+    
     
     
   
-    document.body.appendChild(this.newElement);
+    document.getElementById("others").appendChild(this.newElement);
   }
   counter+=1;
   console.log(counter)
 }
-  
+var clXCent = event.clientX / window.innerWidth *100;
+ var clYCent = event.clientY / window.innerHeight *100;
+//   this.newElement.style.transformOrigin =clXCent+"% "+clYCent+"%";
+
+// document.getElementById("others").style.left=event.clientX + "px"
+// document.getElementById("others").style.top=event.clientY + "px"
 }
