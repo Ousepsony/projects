@@ -26,6 +26,7 @@ body{
 .others{
     animation:rotation 3s infinite;
     animation-timing-function: linear;
+    
 }
 .elements{
     min-height: 100px;
