@@ -9,8 +9,9 @@ function mouseTrack(event){
   clXCent = event.clientX / window.innerWidth *100;
   clYCent = event.clientY / window.innerHeight *100;
   console.log(clXCent,clYCent);
-
-  createElements.newElement.style.transformOrigin = clXCent+" "+clYCent;
+  this.getPosPercent = function(){
+    return(clXCent+"% "+clYCent+"%")
+  }
 
 }
 
@@ -40,6 +41,15 @@ function createElements(){
     console.log("Element Properties: color:" + this.newElement.style.backgroundColor) 
     this.newElement.style.top = Math.floor(Math.random() * (window.innerHeight - randomSeed)) + "px";
     this.newElement.style.left = Math.floor(Math.random() * (window.innerHeight)) + "px";
+    
+    function getPos(event){
+      clXCent = event.clientX / window.innerWidth *100;
+      clYCent = event.clientY / window.innerHeight *100;
+      return clXCent+"% "+clYCent+"%"
+    }
+      this.newElement.style.transformOrigin =window.addEventListener("mousemove",getPos);
+    
+    
   
     document.body.appendChild(this.newElement);
   }

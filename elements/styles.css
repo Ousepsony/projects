@@ -7,6 +7,7 @@
 
 body{
     overflow: hidden;
+    
 }
 
 .my{
@@ -22,15 +23,17 @@ body{
     z-index: 1000000;
 
 }
-
+.others{
+    animation:rotation 3s infinite;
+    animation-timing-function: linear;
+}
 .elements{
     min-height: 100px;
     min-width: 100px;
     border-radius: 100%;
     background-color: blue;
     position: absolute;
-    animation:rotation 3s infinite;
-    animation-timing-function: linear;
+    
 }
 
 @keyframes rotation {
