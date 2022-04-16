@@ -1,6 +1,18 @@
 var RandBg= "hsla("+0 +", "+0+"%, "+Math.floor(Math.random() * (80) + 79)+ "%,1)";
 document.body.style.backgroundColor = RandBg;
 
+window.addEventListener("mousemove",mouseTrack);
+function mouseTrack(event){
+  console.log("moven");
+  document.getElementById("my").style.top =event.clientY +"px";
+  document.getElementById("my").style.left =event.clientX + "px";
+  clXCent = event.clientX / window.innerWidth *100;
+  clYCent = event.clientY / window.innerHeight *100;
+  console.log(clXCent,clYCent);
+
+  createElements.newElement.style.transformOrigin = clXCent+" "+clYCent;
+
+}
 
 window.addEventListener("click", createElements);
  var counter = 0;
@@ -28,8 +40,6 @@ function createElements(){
     console.log("Element Properties: color:" + this.newElement.style.backgroundColor) 
     this.newElement.style.top = Math.floor(Math.random() * (window.innerHeight - randomSeed)) + "px";
     this.newElement.style.left = Math.floor(Math.random() * (window.innerHeight)) + "px";
-
-    
   
     document.body.appendChild(this.newElement);
   }

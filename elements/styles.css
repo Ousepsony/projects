@@ -9,10 +9,32 @@ body{
     overflow: hidden;
 }
 
+.my{
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    max-height: 10px;
+    max-width: 10px;
+    top: 50vh;
+    left:50%;
+    background-color: black;;
+    border-radius: 100%;
+    z-index: 1000000;
+
+}
+
 .elements{
     min-height: 100px;
     min-width: 100px;
     border-radius: 100%;
     background-color: blue;
     position: absolute;
+    animation:rotation 3s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotation {
+0% {
+    transform:rotate(-360deg);
+  }
 }
