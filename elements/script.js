@@ -22,7 +22,7 @@ function createElements(event){
   document.getElementById("others").style.left =event.clientX + "px";
   if(counter<10){
     var clickRandBg = "hsla("+0 +", "+0+"%, "+Math.floor(Math.random() * (80) + 79)+ "%,1)";
-  document.body.style.backgroundColor = clickRandBg;
+  // document.body.style.backgroundColor = clickRandBg;
 
   
   var number = Math.floor(Math.random() * 3)
@@ -41,17 +41,14 @@ function createElements(event){
   
     this.newElement.style.backgroundColor = "hsla("+ Math.floor(Math.random() * 48) +","+ 100 +"%,"+50  +"%,"+ (Math.random() * 0.90 + 0.60) +")";
     // console.log("Element Properties: color:" + this.newElement.style.backgroundColor) 
-    this.newElement.style.top = Math.floor(Math.random() * (window.innerHeight-100) + (-1*((window.innerHeight-100)))) + "px";
-    this.newElement.style.left = Math.floor(Math.random() * (window.innerWidth-100) + (-1*((window.innerWidth-100)))) + "px";
-    
-    
-    
-    
+  
+this.newElement.style.top = ((Math.random() < 0.5 ? -1 : 1) * (Math.floor(Math.random() * (window.innerHeight-300))))+ "px";
+this.newElement.style.left = ((Math.random() < 0.5 ? -1 : 1) * (Math.floor(Math.random() * (window.innerWidth-300))))+ "px";
   
     document.getElementById("others").appendChild(this.newElement);
   }
   counter+=1;
-  console.log(counter)
+  // console.log(counter)
 }
 var clXCent = event.clientX / window.innerWidth *100;
  var clYCent = event.clientY / window.innerHeight *100;
@@ -60,3 +57,7 @@ var clXCent = event.clientX / window.innerWidth *100;
 // document.getElementById("others").style.left=event.clientX + "px"
 // document.getElementById("others").style.top=event.clientY + "px"
 }
+
+
+// console.log(Math.floor(Math.random() * (window.innerHeight-100))+ "px")
+// console.log( Math.floor(Math.random() * (window.innerWidth-100) + -1*((window.innerWidth-100))) + "px")

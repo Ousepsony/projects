@@ -24,7 +24,7 @@ body{
 
 }
 .others{
-    animation:rotation 3s infinite;
+    animation:rotation 5s infinite;
     animation-timing-function: linear;
     position: absolute;
     overflow:visible;
