@@ -26,11 +26,14 @@ function mouseMoveChange(event){
     var ww = window.innerWidth;
     var wh = window.innerHeight;
 
-    if(styleMouseX<(ww/2)){
+    if(mouseX<(ww/2)){
         styleMouseX =  (-(styleMouseX));
     }
-    if(styleMouseY<(wh/2)){
+    if(mouseY<(wh/2)){
         styleMouseY =  (-(styleMouseY));
     }
+
+    styleMouseX = ww/2 + styleMouseX;
+    styleMouseY = wh/2 + styleMouseY;
     console.log(styleMouseX,styleMouseY)
 }
