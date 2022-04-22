@@ -19,21 +19,14 @@ function mouseMoveChange(event){
     var mouseY = event.clientY;
     dot.style.top = mouseY-12 + "px";
     dot.style.left = mouseX-12 + "px";
-
-    var styleMouseX = mouseX/2;
-    var styleMouseY = mouseY/2;
     
     var ww = window.innerWidth;
     var wh = window.innerHeight;
 
-    if(mouseX<(ww/2)){
-        styleMouseX =  (-(styleMouseX));
-    }
-    if(mouseY<(wh/2)){
-        styleMouseY =  (-(styleMouseY));
-    }
 
-    styleMouseX = ww/2 + styleMouseX;
-    styleMouseY = wh/2 + styleMouseY;
-    console.log(styleMouseX,styleMouseY)
+    var propX = mouseX-(window.innerWidth /2);
+    var propY = mouseY-(window.innerHeight /2);
+
+    
+    console.log(propX,propY)
 }
