@@ -26,12 +26,21 @@ function mouseMoveChange(event){
 
 
     var propX = mouseX-(window.innerWidth /2);
-    var propY = mouseY-(window.innerHeight /2);
+    var propY = (mouseY-(window.innerHeight /2));
 
+
+    propX = propX/10;
+    propY =propY/10;
     
-    console.log("propX,propY :",propX,propY);
-    var tileBS = -(propY) + "px " + -(propX) + "px "+ "60"+"px #bebebe,\n" + propX + "px " + propY + "px "+ "60"+"px #ffffff"
-    console.log(tileBS)
-    tile.style.boxShadow = tileBS;
+    console.log("(prop)X:",propX,", (prop)Y:",propY);
+    if(propX>0 && propY > 0){
+        
+    }
+    var tileBS =propX + "px " + propY + "px "+ "60"+"px #ffffff";
+    var tileBS2 = -1*(propX) + "px " + -1*(propY) + "px "+ "60"+"px #bebebe";
+    
+    
+    // console.log(tileBS)
+    tile.style.boxShadow = tileBS+","+tileBS2;
 }
 
