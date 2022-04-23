@@ -14,6 +14,7 @@ function resizeElements(){
 }
 
 window.addEventListener("mousemove",mouseMoveChange);
+
 function mouseMoveChange(event){
     var mouseX =  event.clientX;
     var mouseY = event.clientY;
@@ -28,5 +29,9 @@ function mouseMoveChange(event){
     var propY = mouseY-(window.innerHeight /2);
 
     
-    console.log(propX,propY)
+    console.log("propX,propY :",propX,propY);
+    var tileBS = -(propY) + "px " + -(propX) + "px "+ "60"+"px #bebebe,\n" + propX + "px " + propY + "px "+ "60"+"px #ffffff"
+    console.log(tileBS)
+    tile.style.boxShadow = tileBS;
 }
+
