@@ -7,6 +7,11 @@
 
 body{
     background-color: #e0e0e0;
+    overflow: hidden;
+}
+
+.header{
+    text-align: center;
 }
 
 #tile{
@@ -17,15 +22,16 @@ body{
     border-radius: 50px;
     box-shadow:  30px 30px 60px #bebebe,
                 -30px -30px 60px #ffffff;
+    z-index: 100;
 }
 
 #dot{
     position: absolute;
-    background-color:yellow;
-    width: 25px;
-    height: 25px;
+    width: 500px;
+    height: 500px;
     border-radius: 100%;
-    z-index: 100;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 50%,  rgba(255,255,255,0) 100%);
 }
 
 #tileTest{
