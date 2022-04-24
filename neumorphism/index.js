@@ -24,7 +24,7 @@ function isClickedOne(){
     isClicked(window)
     function isClicked(window){
         n += 1;
-        console.log(n);
+        // console.log(n);
         
     }
 }
@@ -40,7 +40,7 @@ function mouseMoveChange(event){
         isInset = "";
         header.innerHTML = "Outset";
     }
-    console.log(isInset)
+    // console.log(isInset)
     var mouseX =  event.clientX;
     var mouseY = event.clientY;
     dot.style.top = mouseY-250 + "px";
@@ -57,7 +57,7 @@ function mouseMoveChange(event){
     propX = propX/10;
     propY =propY/10;
     
-    console.log("(prop)X:",propX,", (prop)Y:",propY);
+    // console.log("(prop)X:",propX,", (prop)Y:",propY);
     if(propX>0 && propY > 0){
         
     }
