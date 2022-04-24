@@ -25,8 +25,16 @@ function isClickedOne(){
     function isClicked(window){
         n += 1;
         // console.log(n);
-        
     }
+    if(n%2==0){
+        isInset = "inset ";
+        header.innerHTML = "Inset";
+    }
+    if(n%2==1){
+        isInset = "";
+        header.innerHTML = "Outset";
+    }
+    tile.style.boxShadow =isInset + propX + "px " + propY + "px "+ "60"+"px #ffffff"+","+isInset +  -1*(propX) + "px " + -1*(propY) + "px "+ "60"+"px #bebebe";
 }
 
 
