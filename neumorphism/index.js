@@ -30,8 +30,6 @@ function isClickedOne(){
 
 
 
-
-
 function mouseMoveChange(event){
     if(n%2==0){
         isInset = "inset ";
