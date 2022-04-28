@@ -23,6 +23,7 @@
     --tcssDarkBlue:#0f172a;
     --tcssBlue:#0ea5e9;
     --tcssPink:#be185d;
+    
 
     --CalcFont:Digital7;
     --CalcFontItalic:Digital7-Italic;
@@ -174,6 +175,8 @@ body{
 
 @media screen and (min-width: 224px) and (max-width: 576px){
     .spacecolumn{
+        
+        
        width: 1%;
     }
     .CalcBody{
