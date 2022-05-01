@@ -16,6 +16,7 @@ function mouseTrack(event){
 
 }
 
+
 window.addEventListener("click", createElements);
  var counter = 0;
 function createElements(event){
