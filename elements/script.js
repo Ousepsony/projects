@@ -9,6 +9,7 @@ function mouseTrack(event){
   
   document.getElementById("others").style.top =event.clientY +"px";
   document.getElementById("others").style.left =event.clientX + "px";
+  
 
 
   
