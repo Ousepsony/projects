@@ -42,6 +42,7 @@ function createElements(event){
     this.newElement.style.minHeight =randomSeed /3 + "px";
     this.newElement.style.maxHeight =randomSeed /3 + "px";
     this.newElement.style.minWidth =randomSeed /3 + "px";
+    
     this.newElement.style.minWidth =randomSeed /3+ "px";
   
     this.newElement.style.backgroundColor = "hsla("+ Math.floor(Math.random() * 48) +","+ 100 +"%,"+50  +"%,"+ (Math.random() * 0.90 + 0.60) +")";
