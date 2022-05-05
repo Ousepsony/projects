@@ -7,7 +7,7 @@ btn1.addEventListener("click",loadBtn1)
 
 function loadBtn1(){
     var xhr = new XMLHttpRequest();
-    xhr.open("GET","data/data.txt",true);
+    xhr.open("GET","http://worldtimeapi.org/api/timezone/Asia/Kolkata",true);
 
 
     xhr.onload = function () {
@@ -15,7 +15,7 @@ function loadBtn1(){
             var text = this.responseText;
             console.log(text)
 
-            document.getElementsByClassName("content").innerHTML = "<h1>" + text + "</h1>";
+            // document.getElementsByClassName("content").innerHTML = "<h1>" + text + "</h1>";
         }
     }
 
