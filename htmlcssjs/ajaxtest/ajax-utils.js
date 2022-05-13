@@ -5,6 +5,8 @@
   
   
   
+  
+
   // Returns an HTTP request object
   function getRequestObject() {
     if (global.XMLHttpRequest) {
