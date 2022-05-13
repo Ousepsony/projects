@@ -2,10 +2,6 @@
 
   // Set up a namespace for our utility
   var ajaxUtils = {};
-  
-  
-  
-  
 
   // Returns an HTTP request object
   function getRequestObject() {
