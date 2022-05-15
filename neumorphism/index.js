@@ -15,10 +15,8 @@ function resizeElements(){
 }
 
 window.addEventListener("mousemove",mouseMoveChange);
-
 var n = 1;
 var isInset = "";
-
 window.addEventListener("click",isClickedOne);
 function isClickedOne(){
     isClicked(window)
@@ -27,10 +25,6 @@ function isClickedOne(){
         // console.log(n);
     }
 }
-
-
-
-
 function mouseMoveChange(event){
     if(n%2==0){
         isInset = "inset ";
