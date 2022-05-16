@@ -22,8 +22,7 @@ function isClickedOne(){
     isClicked(window)
     function isClicked(window){
         n += 1;
-        // console.log(n);
-        
+
     }
 }
 function mouseMoveChange(event){
@@ -52,15 +51,12 @@ function mouseMoveChange(event){
     propX = propX/10;
     propY =propY/10;
     
-    // console.log("(prop)X:",propX,", (prop)Y:",propY);
     if(propX>0 && propY > 0){
         
     }
     var tileBS =isInset + propX + "px " + propY + "px "+ "60"+"px #ffffff";
     var tileBS2 =isInset +  -1*(propX) + "px " + -1*(propY) + "px "+ "60"+"px #bebebe";
     
-    
-    // console.log(tileBS)
     tile.style.boxShadow = tileBS+","+tileBS2;
 }
 
