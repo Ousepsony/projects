@@ -23,6 +23,7 @@ function isClickedOne(){
     function isClicked(window){
         n += 1;
         // console.log(n);
+        
     }
 }
 function mouseMoveChange(event){
