@@ -1,11 +1,4 @@
-
-// function resizeElements(element,p_top,p_left){
-//     element.style.top = (window.innerHeight/2 - 150)  + "px";
-    
-//     element.style.left = (window.innerWidth/2 - 150)  + "px";   
-// }
-
-// window.addEventListener("resize",resizeElements(tile));
+var globalScope = this;
 
 window.addEventListener("mousemove",mouseMoveChange);
 var n = 1;
