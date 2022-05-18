@@ -21,17 +21,12 @@ function mouseMoveChange(event){
         header.innerHTML = "Outset";
     }
     // console.log(isInset)
-    var mouseX =  event.clientX;
-    var mouseY = event.clientY;
-    dot.style.top = mouseY-250 + "px";
-    dot.style.left = mouseX-250 + "px";
-    
-    var ww = window.innerWidth;
-    var wh = window.innerHeight;
-
-
-    var propX = mouseX-(window.innerWidth /2);
-    var propY = (mouseY-(window.innerHeight /2));
+    var mX =  event.clientX;
+    var mY = event.clientY;
+    dot.style.top = mY-250 + "px";
+    dot.style.left = mX-250 + "px";
+    var propX = mX-(window.innerWidth /2);
+    var propY = (mY-(window.innerHeight /2));
 
 
     propX = propX/10;
