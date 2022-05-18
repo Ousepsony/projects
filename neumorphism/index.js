@@ -1,14 +1,11 @@
-var tile = document.getElementById("tile");
-var dot = document.getElementById("dot");
-var header = document.getElementById("header");
 
+// function resizeElements(element,p_top,p_left){
+//     element.style.top = (window.innerHeight/2 - 150)  + "px";
+    
+//     element.style.left = (window.innerWidth/2 - 150)  + "px";   
+// }
 
-
-window.addEventListener("resize",resizeElements);
-function resizeElements(){
-    tile.style.top = window.innerHeight/2 - 150  + "px";
-    tile.style.left = window.innerWidth/2 - 150  + "px";   
-}
+// window.addEventListener("resize",resizeElements(tile));
 
 window.addEventListener("mousemove",mouseMoveChange);
 var n = 1;
