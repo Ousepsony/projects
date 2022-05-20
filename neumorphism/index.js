@@ -48,6 +48,7 @@ function moven(event){
     globalScope.mouseY = event.clientY;
 }
 
+
 function applyStyles(className,insetValue,mouseX, mouseY,dividend){
     var inset;
     if(insetValue==true){
