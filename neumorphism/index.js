@@ -42,6 +42,7 @@ var globalScope = {};
 // }
 globalScope.counter = 0;
 
+
 window.addEventListener("mousemove",moven);
 function moven(event){
     globalScope.mouseX = event.clientX;
