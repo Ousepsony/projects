@@ -41,13 +41,10 @@ var globalScope = {};
 //     tile.style.boxShadow = tileBS+","+tileBS2;
 // }
 globalScope.counter = 0;
+globalScope.isInset = false;
 
 
-window.addEventListener("mousemove",moven);
-function moven(event){
-    globalScope.mouseX = event.clientX;
-    globalScope.mouseY = event.clientY;
-}
+
 
 
 function applyStyles(className,insetValue,mouseX, mouseY,dividend){
@@ -57,22 +54,30 @@ function applyStyles(className,insetValue,mouseX, mouseY,dividend){
     }
     var tileBS =inset +" "+ (mouseX/dividend) + "px " + (mouseY/dividend) + "px "+ "60"+"px #ffffff";
     var tileBS2 =inset +" "+  -1*((mouseX/dividend)) + "px " + -1*((mouseY/dividend)) + "px "+ "60"+"px #bebebe";
-    document.getElementsByClassName(className).style.boxShadow = tileBS+","+tileBS2;
+    console.log(tileBS,tileBS2)
+    dot.style.top = mouseX-250 + "px";
+    dot.style.left = mouseY-250 + "px";
+    tile.style.boxShadow = tileBS+","+tileBS2;
+}
+
+window.addEventListener("mousemove",moven);
+function moven(event){
+   applyStyles("element",globalScope.isInset,globalScope.mouseX,globalScope.mouseY,10)
 }
 
 window.addEventListener("click",clicked);
 function clicked(){
-    console.log(globalScope.mouseX,globalScope.mouseY);
+    // console.log(globalScope.mouseX,globalScope.mouseY);
 
     if (globalScope.counter%2 == 1){
-        applyStyles("elements",false,globalScope.mouseX,globalScope.mouseY,10);
+        applyStyles("element",globalScope.isInset,globalScope.mouseX,globalScope.mouseY,10);
+        
         globalScope.counter +=1;
+        globalScope.isInset =false;
     }
     if (globalScope.counter%2 == 0){
-        applyStyles("elements",true,globalScope.mouseX,globalScope.mouseY,10);
+        applyStyles("element",globalScope.isInset,globalScope.mouseX,globalScope.mouseY,10);
+        globalScope.isInset =true;
         globalScope.counter +=1;
     }
-
-
-
 }
