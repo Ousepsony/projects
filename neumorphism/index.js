@@ -52,6 +52,7 @@ function applyStyles(className,insetValue,mouseX, mouseY,dividend){
     if(insetValue==true){
         inset="inset";
         
+
     }
     var tileBS =inset +" "+ (mouseX/dividend) + "px " + (mouseY/dividend) + "px "+ "60"+"px #ffffff";
     var tileBS2 =inset +" "+  -1*((mouseX/dividend)) + "px " + -1*((mouseY/dividend)) + "px "+ "60"+"px #bebebe";
