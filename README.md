@@ -1,11 +1,14 @@
 
-# Projects
-
+# Hi, I'm Ousep! 👋
 
 
 #### I am Ousep/Joseph, a student and currently learning Javascript;
+
+![Joseph's GitHub stats](https://github-readme-stats.vercel.app/api?username=ousepsony&show_icons=true&theme=radical)
+
 ## 🛠 Skills
 ##### Javascript, HTML, CSS.
+##### AJAX
 ##### Illustration and Wireframe
 ##### Adobe Photoshop
 ##### Adobe Illustrator
@@ -14,12 +17,16 @@
 ##### WordPress WYSIWYG editing with Elementor
 ##### Minecraft spigot/bukkit and datapack building
 
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ousepsony&layout=compact)](https://github.com/Ousepsony)
 
-![gif](https://raw.githubusercontent.com/Ousepsony/projects/main/files/916aadc9-4efe-4967-8314-5377102eacce.gif)
+## Projects
+
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=ousepsony&repo=projects)](https://github.com/ousepsony/projects)
+
 ## Status
 
 ![GitHub followers](https://img.shields.io/github/followers/Ousepsony?label=Github&style=social)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Ousepsony/projects)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/y/ousepsony/projects)
 ![GitHub last commit](https://img.shields.io/github/last-commit/Ousepsony/projects)
 ![Lines of code](https://img.shields.io/tokei/lines/github/Ousepsony/projects)
 
@@ -30,14 +37,6 @@
 [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](#)
 [![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](#)
 
-## Favourite Color Scheme
-
-| Color             | Hex                                                                |
-| ----------------- | ------------------------------------------------------------------ |
-| Russian Red | ![#ff3b3f](https://via.placeholder.com/10/ff3b3f?text=+) #ff3b3f |
-| Powder Blue | ![#caebf2](https://via.placeholder.com/10/caebf2?text=+) #caebf2 |
-| Maroon Blue | ![#210052](https://via.placeholder.com/10/210052?text=+) #210052 |
-| Cultured    | ![#00d1a0](https://via.placeholder.com/10/f5f5f5?text=+) #f5f5f5 |
 
 
 ## 🔗 Links
