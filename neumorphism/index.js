@@ -8,24 +8,6 @@ globalScope.insetText="";
 
 
 
-<<<<<<< HEAD
-function applyStyles(className,insetValue,mouseX, mouseY,dividend){
-    var inset;
-    if(insetValue==true){
-        inset="inset";
-        
-
-    }
-    var tileBS =inset +" "+ (mouseX/dividend) + "px " + (mouseY/dividend) + "px "+ "60"+"px #ffffff";
-    var tileBS2 =inset +" "+  -1*((mouseX/dividend)) + "px " + -1*((mouseY/dividend)) + "px "+ "60"+"px #bebebe";
-    console.log(tileBS,tileBS2)
-    dot.style.top = mouseX-250 + "px";
-    dot.style.left = mouseY-250 + "px";
-    
-    tile.style.boxShadow = tileBS+","+tileBS2;
-}
-=======
->>>>>>> 3409c82756c5594532593bdf2ecb93f67d06af4c
 
 window.addEventListener("mousemove",moven);
 function moven(event){
