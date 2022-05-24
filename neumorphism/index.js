@@ -59,6 +59,7 @@ function applyStyles(className,insetValue,mouseX, mouseY,dividend){
     console.log(tileBS,tileBS2)
     dot.style.top = mouseX-250 + "px";
     dot.style.left = mouseY-250 + "px";
+    
     tile.style.boxShadow = tileBS+","+tileBS2;
 }
 
