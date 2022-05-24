@@ -17,10 +17,22 @@ body{
     
 }
 
+#dot{
+    position: absolute;
 
-#tile{
-    margin-left: calc(50% - 150px);
-    margin-top: calc(50vh - 150px);
+    /* top: 250px;
+    left: 500px; */
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 50%,  rgba(255,255,255,0) 100%);
+    z-index: 10;
+}
+
+.element{
+    position: absolute; 
+    
     background-color: #e0e0e0;
     width: 300px;
     height: 300px;
@@ -29,12 +41,19 @@ body{
                 -30px -30px 60px #ffffff;
     z-index: 100;
 }
-
-#dot{
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    border-radius: 100%;
-    background: rgb(255,255,255);
-    background: radial-gradient(circle, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 50%,  rgba(255,255,255,0) 100%);
+#tile{
+   left: calc(50% - 150px);
+    top: calc(50vh - 150px);
 }
+
+#tile2{
+    width:  500px;
+    height:  150px;
+    left: calc(40% - 250px);
+    
+    
+    top: calc(10vh - 75px);
+    
+}
+
+
