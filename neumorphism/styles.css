@@ -42,17 +42,26 @@ body{
     z-index: 100;
 }
 #tile{
-   left: calc(50% - 150px);
-    top: calc(50vh - 150px);
+    height: 50vh;
+    width: 50vw;
+   left: calc(50%);
+    top: calc(50vh);
 }
 
 #tile2{
     width:  500px;
     height:  150px;
-    left: calc(40% - 250px);
+    left: calc(30% - 250px);
     
     
-    top: calc(10vh - 75px);
+    top: calc(50vh - 75px);
     
+}
+
+#tile3{
+    width: 10vw;
+    height: 50vh;
+    left: calc(20%);
+    top: calc(10%);
 }
 
