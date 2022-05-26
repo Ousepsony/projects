@@ -1,29 +1,17 @@
 var globalScope = {};
 var lightshadow = "#ffffff";
 var darkshadow = "#bebebe";
-
 globalScope.counter = 0;
 globalScope.isInset = false;
-
-
 globalScope.insetText="";
-
-
-
-
 window.addEventListener("mousemove",moven);
 function moven(event){
     globalScope.mouseX = event.clientX;
     globalScope.mouseY =  event.clientY;
    applyStyles(globalScope.isInset,globalScope.mouseX,globalScope.mouseY,10);
-//    globalScope.insetText = globalScope.insetText;    
-//    console.log(globalScope.mouseX,globalScope.mouseY);
-   
 }
-
 window.addEventListener("click",clicked);
 function clicked(){
-
     if(globalScope.counter % 2 === 1){
         globalScope.insetText  = "inset ";
         applyStyles(globalScope.isInset,globalScope.mouseX,globalScope.mouseY,10);
@@ -34,17 +22,13 @@ function clicked(){
         applyStyles(globalScope.isInset,globalScope.mouseX,globalScope.mouseY,10);
         globalScope.counter += 1;
     }
-    
 }
 
 function applyStyles(insetValue,mouseX, mouseY,dividend){
-
     var intraDividend = 10
-
     var propX = mouseX-(window.innerWidth /2);
     var propY = (mouseY-(window.innerHeight /2));    
     var insideTag =  document.getElementsByClassName("element");
-
     var tileBS =globalScope.insetText+ (propX/intraDividend) + "px " + (propY/intraDividend) + "px "+ "60"+"px " + lightshadow ;
     var tileBS2 =globalScope.insetText+  -1*((propX/intraDividend)) + "px " + -1*((propY/intraDividend)) + "px "+ "60"+"px " + darkshadow;
     dot.style.top =mouseY - 250 + "px";
