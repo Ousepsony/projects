@@ -9,6 +9,7 @@ function moven(event){
     globalScope.mouseX = event.clientX;
     globalScope.mouseY =  event.clientY;
    applyStyles(globalScope.isInset,globalScope.mouseX,globalScope.mouseY,10);
+    
 }
 window.addEventListener("click",clicked);
 function clicked(){
