@@ -10,6 +10,9 @@ function mouseTrack(event){
   document.getElementById("others").style.top =event.clientY +"px";
   document.getElementById("others").style.left =event.clientX + "px":  
   // console.log(clXCent,clYCent);
+    // console.log(clXCent,clYCent);
+    // console.log(clXCent,clYCent);
+    // console.log(clXCent,clYCent);
 }
 window.addEventListener("click", createElements);
  var counter = 0;
