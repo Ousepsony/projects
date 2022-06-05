@@ -12,9 +12,7 @@
 //     console.log(i)
 //     }
 // }
-
 //fibonacci sequence generator
-
 function fibonacci(number){
     num=0;lastNum=1;secondLastNum=0;
     for(i=0; i<=number;i++ ){
