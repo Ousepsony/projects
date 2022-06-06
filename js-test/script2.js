@@ -10,3 +10,14 @@
 // 	numberOfBottles--;
 //     console.log(numberOfBottles + " " + bottleWord + " of beer on the wall.");
 // }
+
+// let ages = [18,19,20,10,6,15,69]
+// let adults = ages.filter(checkage)
+// function checkage(element){
+//     return element >= 18;
+// }
+
+// adults.forEach(print);
+// function print(element){
+//     console.log(element)
+// }
