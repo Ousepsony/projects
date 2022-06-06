@@ -21,3 +21,13 @@
 // function print(element){
 //     console.log(element)
 // }
+
+let prices = [ 5, 10,17, 69, 688,10]
+prices = prices.sort(descendingSort)
+prices.forEach(print)
+function descendingSort(x,y){
+    return y-x
+}
+function print(element){
+    console.log(element     )
+}
