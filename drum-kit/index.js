@@ -3,6 +3,7 @@ var score = 0;
 var globalScope ={};
 
 
+
 window.setInterval(getMouseCoords(),1000)
 function getMouseCoords (event){
     globalScope.clientX = event.clientX;
@@ -19,6 +20,8 @@ if(gameState ===0){
 }
 
 if(gameState === 1){
+    
+   self = this;
     
 }
 
