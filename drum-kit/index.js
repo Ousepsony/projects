@@ -1,30 +1,7 @@
-var gameState =0;
-var score = 0;
-var globalScope ={};
-
-
-
-window.setInterval(getMouseCoords(),1000)
-function getMouseCoords (event){
-    globalScope.clientX = event.clientX;
-    globalScope.clientY = event.clientY;
-};
-
-console.log(globalScope.clientX,globalScope.clientY)
-if(gameState ===0){
-    // var element = 
-    // document.createElement("button");
-    // element.innerHTML = "test";
-    // document.body.appendChild(element)
-    
+for(let i = 0; i<=document.querySelectorAll(".drum").length;i++){
+    document.querySelectorAll(".drum")[i].addEventListener("click",clicked)
 }
 
-if(gameState === 1){
-    
-   self = this;
-    
-}
-
-var clickFunction = function(){
-    console.log("click");
+function clicked(){
+    console.log("clicked")
 }
