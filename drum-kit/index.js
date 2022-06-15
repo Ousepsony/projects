@@ -5,19 +5,19 @@ for(let i = 0; i<document.querySelectorAll(".drum").length; i++){
     document.addEventListener("keyup",pressed);
 
 function pressed(event) {
-    if(event.code==="KeyA"){
+    if(event.code==="KeyW"){
         var audio = new Audio("sounds/tom-1.mp3");
         audio.play();
     }
-    else if(event.code==="KeyS"){
+    else if(event.code==="KeyA"){
         var audio = new Audio("sounds/tom-2.mp3");
         audio.play();
     }
-    else if(event.code==="KeyD"){
+    else if(event.code==="KeyS"){
         var audio = new Audio("sounds/tom-3.mp3");
         audio.play();
     }
-    else if(event.code==="KeyF"){
+    else if(event.code==="KeyD"){
         var audio = new Audio("sounds/tom-4.mp3");
         audio.play();
     }
