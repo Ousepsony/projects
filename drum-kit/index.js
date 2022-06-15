@@ -1,27 +1,14 @@
-// for(let i = 0; i<=document.querySelectorAll(".drum").length; i++){
-//     document.querySelectorAll(".drum")[i].addEventListener("click",clicked);
-// }
-
-// function clicked(){
-//     console.log("clicked")
-// }
-
-//higher order fucntion test
-
-function add(x,y){
-    
-    return x+y
+for(let i = 0; i<=document.querySelectorAll(".drum").length; i++){
+    document.querySelectorAll(".drum")[i].addEventListener("click",clicked);
 }
-function subtract(x,y){
-    return x-y
-}
-function multiply(x,y){
-    return x*y
-}
-function divide(x,y){
-    return x/y
+for(let i = 0; i<=document.querySelectorAll(".drum").length; i++){
+    document.querySelectorAll(".drum")[i].addEventListener("keydown",clicked);
 }
 
-function calculator(num1,num2, operation){
-    return(operation(num1,num2))
+
+
+function clicked(){
+    console.log("sounds/"+this.name+".mp3");
+    var audio = new Audio("sounds/"+this.name+".mp3");
+    audio.play();
 }
