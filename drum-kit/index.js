@@ -1,10 +1,13 @@
 for(let i = 0; i<document.querySelectorAll(".drum").length; i++){
-    document.querySelectorAll(".drum")[i].addEventListener("click",clicked);
+    document.querySelectorAll(".drum")[i].addEventListener("click",pressed);
 }
-
-    document.addEventListener("keyup",pressed);
-
+for(let i = 0; i<document.querySelectorAll(".drum").length; i++){
+    document.querySelectorAll(".drum")[i].addEventListener("keyup",pressed);;
+}
 function pressed(event) {
+
+    this.style.color = "white";
+
     if(event.code==="KeyW"){
         var audio = new Audio("sounds/tom-1.mp3");
         audio.play();
@@ -33,18 +36,11 @@ function pressed(event) {
         var audio = new Audio("sounds/kick-bass.mp3");
         audio.play();
     }
-};
-
-
-
-function clicked(){
-    console.log("sounds/"+this.name+".mp3");
-    var audio = new Audio("sounds/"+this.name+".mp3");
+    else if(event.ClientX != 0){
+        var audio = new Audio("sounds/"+this.name+".mp3");
     audio.play();
-}
-
-// document.addEventListener('keydown', logKey);
-
-// function logKey(e) {
-//   log.textContent += ` ${e.code}`;
-// }
+    
+    }
+    // setTimeout('', 1000);
+    // this.style.color = "#DA0463";
+};
