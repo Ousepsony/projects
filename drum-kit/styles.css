@@ -82,3 +82,10 @@ footer {
   margin: 10px;
   background-color: white; 
 }
+
+@keyframes effect{
+  0%   {color:#DA0463;}
+  25%  {color: white;}
+  50%  {color: #ffffff;}
+  100% {color: white;}
+}
