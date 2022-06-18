@@ -81,6 +81,7 @@ footer {
   text-align: center;
   margin: 10px;
   background-color: white; 
+  animation-timing-function: linear;
 }
 
 @keyframes effect{
