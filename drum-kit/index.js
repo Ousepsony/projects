@@ -6,6 +6,7 @@ function clicked(event) {
     audio.play();
     this.style.animation ='effect'
     // this.style.animation.play = 'effect';
+    
     console.log(this)
 };
 
