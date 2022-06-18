@@ -1,12 +1,9 @@
-function BellBoy(name, age, salary, experience){
-    this.name = name;
-    this.age = age;
-    this.salary = salary;
-    this.experience =  experience;
-    this.welcome = function(){
-        console.log(`welcome ${name} `)
+function addEventListenerCopy (type,action){
+    var eventProperties = {
+        ClientX:100,
+        ClientY:200,
+    }
+    if(type="keypress"){
+        action(eventProperties);
     }
 }
-
-var bellBoy1 = new BellBoy("Joseph",23,12314,5)
-bellBoy1.welcome();
