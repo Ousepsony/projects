@@ -4,13 +4,16 @@ for(let i = 0; i<document.querySelectorAll(".drum").length; i++){
 function clicked(event) {
     var audio = new Audio("sounds/"+this.name+".mp3");
     audio.play();
-    // this.style.animate()
+    this.style.animation ='effect'
+    // this.style.animation.play = 'effect';
+    console.log(this)
 };
 
 window.addEventListener("keyup",function(event){
     switch (event.key) {
         case "w":
             var audio = new Audio("sounds/tom-1.mp3");
+            document.style.animation ='effect 1s'
             audio.play();
             break;
         case "a":
