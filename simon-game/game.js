@@ -13,6 +13,7 @@ $(document).keypress(function() {
     nextSequence();
     started = true;
   }
+  
 });
 $(".btn").click(function() {
 if(started){
